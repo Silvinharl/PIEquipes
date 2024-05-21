@@ -1,0 +1,93 @@
+/*Teste busca*/
+
+.busca{
+  margin-top: 0px;
+}
+
+#campo_busca{
+  border: 1px solid;
+  border-radius: 5px; 
+  color:#C0C0C0;
+}
+
+.idem {
+  padding: 5px;
+  border: 1px #DDD solid;
+}
+.idem:nth-child(1){
+  width: 250px;
+  border-radius: 10px 0px 0px 10px;
+}
+.idem:nth-child(2){
+  width: 40px;
+  border-radius: 0px 10px 10px 0px;
+  text-align:left;
+  color: white;
+  background: #2a2a2a;
+  border: 1px #2a2a2a solid;
+  cursor: pointer;
+  text-indent: -1.3px;
+}
+.idem:nth-child(1):focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1px #DDD solid;
+} 
+
+/*FIM do Teste busca*/
+
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.small-img-col {
+  flex-basis: 20%;
+  cursor: pointer;
+}
+
+.small-img-col:hover img {
+  opacity: 0.7;
+}
+
+/* Estilização dos produtos relacionados: */
+.product {
+  cursor: pointer;
+  margin-bottom: 20rem;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  object-fit: cover;
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+}
+
+#botaocomprar {
+
+  color: white;
+  text-decoration: none;
+
+}
+
+/* Efeito do botão aparecendo de baixo */
+.product .buy-btn {
+  background: var(--main-color);
+  transform: translateY(20px);
+  opacity: 0;
+  border-radius: 0.3rem;
+  transition: 0.3s all;
+}
+.product:hover .buy-btn {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.product .buy-btn:hover {
+  background-color: var(--main-color-btn-hover);
+}
