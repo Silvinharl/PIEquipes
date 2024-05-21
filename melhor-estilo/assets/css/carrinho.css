@@ -1,0 +1,206 @@
+/*Teste busca*/
+
+.busca{
+  margin-top: 0px;
+}
+
+#campo_busca{
+  border: 1px solid;
+  border-radius: 5px; 
+  color:#C0C0C0;
+}
+
+.idem {
+  padding: 5px;
+  border: 1px #DDD solid;
+}
+.idem:nth-child(1){
+  width: 250px;
+  border-radius: 10px 0px 0px 10px;
+}
+.idem:nth-child(2){
+  width: 40px;
+  border-radius: 0px 10px 10px 0px;
+  text-align:left;
+  color: white;
+  background: #2a2a2a;
+  border: 1px #2a2a2a solid;
+  cursor: pointer;
+  text-indent: -1.3px;
+}
+.idem:nth-child(1):focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  border: 1px #DDD solid;
+} 
+
+/*FIM do Teste busca*/
+
+/* Tornando a tabela responsiva */
+
+.table-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 15px; /* Altura da barra de rolagem */
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: coral;
+  border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+table {
+  width: 100%;
+  min-width: 600px; /* Ajuste conforme necessário */
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background: coral;
+  color: white;
+}
+
+table img {
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
+
+table td:nth-child(4) input {
+  width: 50px;
+}
+
+table td a {
+  color: black;
+}
+
+table td a:hover {
+  color: coral;
+}
+
+
+
+/* Deixando a tabela responsiva: */
+#cart-container {
+  /* Pra tabela scrollar invés de quebrar o layout: */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+#cart-container table h6 {
+  font-weight: 400;
+}
+
+#cart-container table thead {
+  font-weight: 700;
+}
+
+#cart-container table thead td {
+  background: coral;
+  color: white;
+  padding: 6px 0;
+}
+
+#cart-container table td {
+  border: 1px solid #b6b3b3;
+  text-align: center;
+}
+
+#cart-container table td:nth-child(1) {
+  width: 15%;
+}
+#cart-container table td:nth-child(2) {
+  width: 25%;
+}
+
+#cart-container table td:nth-child(3),
+#cart-container table td:nth-child(4),
+#cart-container table td:nth-child(5),
+#cart-container table td:nth-child(6) {
+  width: 15%;
+}
+
+#cart-container table tbody img {
+  width: 100px;
+  height: 80px;
+  /* Pra imagem não ficar distorcida: */
+  object-fit: cover;
+}
+
+#cart-container table tbody i {
+  color: black;
+}
+#cart-container table tbody i:hover {
+  color: coral;
+}
+
+#cart-bottom .coupon > div,
+#cart-bottom .total > div {
+  border: 1px solid #b6b3b3;
+}
+
+#cart-bottom .coupon h5,
+#cart-bottom .total h5 {
+  background: coral;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-weight: 700;
+}
+
+#cart-bottom .coupon p,
+#cart-bottom .coupon input {
+  padding: 0 12px;
+}
+
+#cart-bottom .coupon input {
+  height: 44px;
+}
+
+#cart-bottom .coupon input,
+#cart-bottom .coupon button {
+  margin: 0 0 20px 12px;
+}
+
+#cart-bottom .total div > div {
+  padding: 0 12px;
+}
+#cart-bottom .total h6 {
+  color: black;
+}
+
+.second-hr {
+  background: #b6b3b3;
+  width: 100%;
+  height: 1px;
+}
+
+#cart-bottom .total div > button {
+  margin: 0 12px 20px 0;
+  display: flex;
+  justify-content: flex-end;
+}
